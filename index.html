@@ -17,25 +17,21 @@
         <h1>Wassup</h1>
       </div>
       <div class="message__area"></div>
-      <div class="bottom">
+
+      <div class="bottom-bar">
         <textarea
-          name=""
           id="textarea"
           cols="30"
-          rows="1"
-          placeholder="Write a Message"
-          style="width: 90%"
+          rows="2"
+          placeholder="Type a message..."
         ></textarea>
-
-        <div class="send" style="width: 10%; text-align: center">
-          <img
-            width="45"
-            height="45"
-            src="https://img.icons8.com/nolan/64/sent.png"
-            alt="sent"
-            onclick="sendMessage(document.getElementById('textarea').value);"
-          />
-        </div>
+        <img
+          width="45"
+          height="45"
+          src="https://img.icons8.com/nolan/64/sent.png"
+          alt="sent"
+          onclick="sendMessage(document.getElementById('textarea').value);"
+        />
       </div>
     </section>
     <script src="/socket.io/socket.io.js"></script>
